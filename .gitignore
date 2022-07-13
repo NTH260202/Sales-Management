@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Sales-Management/FileContentIndex
+/.vs
+/PRN211PE_SU22_NguyenThanhHa/.vs
+/PRN211PE_SU22_NguyenThanhHa/BusinessObject/bin/Debug/net6.0
+/PRN211PE_SU22_NguyenThanhHa/BusinessObject/obj
+/PRN211PE_SU22_NguyenThanhHa/DataAccess/bin/Debug/net6.0
+/PRN211PE_SU22_NguyenThanhHa/DataAccess/obj
+/PRN211PE_SU22_NguyenThanhHa/PRN211PE_SU22_NguyenThanhHa_Presentation/bin/Debug/net6.0-windows
+/PRN211PE_SU22_NguyenThanhHa/PRN211PE_SU22_NguyenThanhHa_Presentation/obj
