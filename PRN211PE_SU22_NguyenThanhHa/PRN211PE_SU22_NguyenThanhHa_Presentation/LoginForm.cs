@@ -19,10 +19,11 @@ namespace PRN211PE_SU22_NguyenThanhHa_Presentation
             try
             {
                 string username = txtUsername.Text;
-                string password = txtPassword.Text;
+                //string password = txtPassword.Text;
+                string password = null;
 
-                TblMember member = _managementContext.TblMembers.Where(m => m.Email == username).FirstOrDefault();
-                if (member == null || member.Password != password)
+                TblMember member = _managementContext.TblMembers.FirstOrDefault(m => m.Email.Equals(username) && m.Password.Equals(password));
+                if (member == null)
                 {
                     throw new Exception("Username or Password is wrong!");
                 }
@@ -30,7 +31,6 @@ namespace PRN211PE_SU22_NguyenThanhHa_Presentation
                 Form frmmain = new MainNotMDIForm(member);
                 frmmain.ShowDialog();
                 this.Close();
-
             }
             catch(Exception ex)
             {
