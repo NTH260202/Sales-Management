@@ -19,8 +19,7 @@ namespace PRN211PE_SU22_NguyenThanhHa_Presentation
             try
             {
                 string username = txtUsername.Text;
-                //string password = txtPassword.Text;
-                string password = null;
+                string password = txtPassword.Text;
 
                 TblMember member = _managementContext.TblMembers.FirstOrDefault(m => m.Email.Equals(username) && m.Password.Equals(password));
                 if (member == null)
