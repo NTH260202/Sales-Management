@@ -28,7 +28,8 @@ namespace PRN211PE_SU22_NguyenThanhHa_Presentation
         private void memberManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form form = new MemberForm(loginMember);
+            //Form form = new MemberForm(loginMember);
+            Form form = new formMemberV2(loginMember);
             form.ShowDialog();
             this.Close();
         }
